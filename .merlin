@@ -9,6 +9,12 @@ S /Users/timcf/MYprojects/HelloReason/node_modules/bs-react-native/lib/ocaml
 B /Users/timcf/MYprojects/HelloReason/node_modules/bs-react-native/lib/ocaml
 S /Users/timcf/MYprojects/HelloReason/node_modules/reason-react/lib/ocaml
 B /Users/timcf/MYprojects/HelloReason/node_modules/reason-react/lib/ocaml
+S /Users/timcf/MYprojects/HelloReason/node_modules/bs-ocaml-protoc/lib/ocaml
+B /Users/timcf/MYprojects/HelloReason/node_modules/bs-ocaml-protoc/lib/ocaml
+S /Users/timcf/MYprojects/HelloReason/node_modules/bs-ocaml-protoc-json/lib/ocaml
+B /Users/timcf/MYprojects/HelloReason/node_modules/bs-ocaml-protoc-json/lib/ocaml
 S src
 B lib/bs/src
+S src/proto_schema
+B lib/bs/src/proto_schema
 ####BSB GENERATED: NO EDIT}

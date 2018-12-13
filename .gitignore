@@ -36,6 +36,7 @@ node_modules/
 npm-debug.log
 yarn-error.log
 lib/
+src/proto_schema/
 
 # BUCK
 buck-out/

@@ -1,0 +1,14 @@
+syntax = "proto3";
+package HelloReason.ProtoSchema;
+
+enum Currency {
+  USD = 0;
+  EUR = 1;
+  BTC = 2;
+}
+
+message Payment {
+  uint64 amount = 1;
+  Currency currency = 2;
+  string reference = 3;
+}

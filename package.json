@@ -3,12 +3,15 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
-    "start": "node node_modules/react-native/local-cli/cli.js start",
-    "test": "jest",
-    "build": "bsb -make-world -clean-world",
-    "watch": "bsb -make-world -clean-world -w"
+    "build_proto_schema": "rm -rf ./src/proto_schema && mkdir ./src/proto_schema && ocaml-protoc -binary -ml_out ./src/proto_schema ./proto_schema.proto",
+    "start": "$npm_execpath run build_proto_schema && node node_modules/react-native/local-cli/cli.js start",
+    "test": "$npm_execpath run build_proto_schema && jest",
+    "build": "$npm_execpath run build_proto_schema && bsb -make-world -clean-world",
+    "watch": "$npm_execpath run build_proto_schema && bsb -make-world -clean-world -w"
   },
   "dependencies": {
+    "bs-ocaml-protoc": "github:timCF/ocaml-protoc",
+    "bs-ocaml-protoc-json": "github:timCF/bs-ocaml-protoc-json",
     "bs-platform": "^4.0.0",
     "bs-react-native": "0.10.0-rc.0",
     "react": "16.6.1",
