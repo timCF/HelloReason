@@ -7,7 +7,7 @@
     "module": "commonjs"
   },
   "bsc-flags": ["-bs-super-errors"],
-  "bs-dependencies": ["bs-react-native", "reason-react", "bs-ocaml-protoc", "bs-ocaml-protoc-json"],
+  "bs-dependencies": ["bs-react-native", "reason-react", "bs-ocaml-protoc", "bs-ocaml-protoc-json", "bs-xmlhttprequest"],
   "sources": [
     {
       "dir": "src",
